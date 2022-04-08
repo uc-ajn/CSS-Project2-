@@ -141,7 +141,7 @@ body {
 
 .fonts{
   border: 1px solid gray;
-      width: 167px;
+  width: 170px;
   height: 65px;
   overflow-y: scroll;
   margin-left: 5px;
@@ -153,7 +153,7 @@ body {
 }
 
 .font_select input{
-  width: 172px;
+  width: 175px;
 }
 
 .font_select img{
