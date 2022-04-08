@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style.css">
+    <title>Css_Project2</title>
+</head>
+
+<body class="flex-center">
+    <div class="main_container">
+        <!-- Title bar -->
+        <div class="title_bar flex">
+            <p>Format cells</p>
+            <div class="title_bar_controls">
+                <button id="btn1" class="btn"></button>
+                <button id="btn2" class="btn"></button>
+            </div>
+        </div>
+        <div class="body">
+            <!-- Selection buttons -->
+            <div class="body_btns flex-left">
+                <button class="bodyButtans">Number</button>
+                <button class="bodyButtans">Alignment</button>
+                <button class="bodyButtans" id="fontBtn">Font</button>
+                <button class="bodyButtans">Border</button>
+                <button class="bodyButtans">Patterns</button>
+                <button class="bodyButtans">Protection</button>
+            </div>
+            <div class="body_contact">
+                <div class="fonts_container flex">
+                    <div class="font_select">
+                        <label for="Font" accesskey="F"> <u>F</u>ont:</label>
+                        <input type="text" name="Font" id="Font" value="Verdana" class="display_block">
+                        <div class="fonts">
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">
+                                <p>Tw Cen MT</p> 
+                            </div>
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">
+                                <p>Tw Cen MT Condensed</p>
+                            </div>
+                            <div class="flex font_scroll">
+                                <img src="./images/TT-font.png" alt="TTfont">
+                                <p>Tw Cen MT Condensed</p>
+                                </div>
+                                <div class="flex active_bg">
+                                    <img src="./images/TT-font.png" alt="TTfont">
+                                    <P>Verdana</P>
+                                </div>
+                                <div>
+                                    <img src="./images/TT-font.png" alt="TTfont">
+                                    <p>Verdana</p>
+                                </div>
+                        </div>
+                    </div>
+                    <div class="font_style">
+                        <label for="font_style" accesskey="o">F<u>o</u>nt style:</label>
+                        <input type="text" name="Regular" id="font_style" value="Regular">
+                        <ul>
+                            <li class="active_bg">Regular</li>
+                            <li>Italic</li>
+                            <li>Bold</li>
+                            <li>Bold Italic</li>
+                        </ul>
+                    </div>
+                    <div class="size">
+                        <label for="size" accesskey="S"><u>S</u>ize:</label>
+                        <input type="text" id="size" name="size" value="10">
+                        <ul>
+                            <li>8</li>
+                            <li>9</li>
+                            <li class="active_bg">10</li>
+                            <li>11</li>
+                            <li>12</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="underline_color flex">
+                    <div class="underline">
+                        <label class="display_block" for="Underline" id="underline"
+                            accesskey="U"><u>U</u>nderline:</label>
+                        <select name="Underline" id="Underline">
+                            <option value="None">None</option>
+                        </select>
+                    </div>
+
+                    <div class="color">
+                        <label class="display_block" for="color" accesskey="C"><u>C</u>olor:</label>
+                        <select name="color" id="color">
+                            <option value="Automatic">Automatic</option>
+                        </select>
+                    </div>
+                    <div class="checkbox flex">
+                        <input type="checkbox" id="normalfont" checked name="normalfont" value="Normal-font">
+                        <label for="normalfont" accesskey="N"><u>N</u>ormal font</label>
+                    </div>
+                </div>
+
+                <!-- Effects and preview section  -->
+                <div class="effects flex">
+                    <fieldset class="fieldset1">
+                        <legend>Effects</legend>
+                        <div class="radiosbtn">
+                            <ul>
+                                <li class="flex">
+                                    <input type="checkbox" id="Strikethrough">
+                                    <label for="Strikethrough">Strikethrough</label>
+                                </li>
+                                <li class="flex">
+                                    <input type="checkbox" id="Superscript" accesskey="b">
+                                    <label for="Superscript">Superscript</label>
+                                </li>
+                                <li class="flex">
+                                    <input type="checkbox" id="Subscript" accesskey="b">
+                                    <label for="Subscript">Subscript</label>
+                                </li>
+                            </ul>
+                        </div>
+                    </fieldset>
+
+                    <div class="preview">
+                        <fieldset class="fieldset2">
+                            <legend>Preview</legend>
+                            <div class="preview_contect flex">
+                                <p id="first_para">____</p>
+                                <div id="sec_Para">
+                                    <p>AaBbCcYyZz</p>
+                                </div>
+                                <p id="third_Para">____</p>
+                            </div>
+                        </fieldset>
+                    </div>
+                </div>
+
+                <div class="para">
+                    <p>This is a true Type font. git commit -m "first commit"
+                    git branch -M mainThe same font will
+                        be used on both your printer and your screen.</p>
+                </div>
+            </div>
+
+            <!-- submit buttons  -->
+            <div class="submit_btn">
+                <input type="button" id="btn_ok" value="OK">
+                <input type="button" value="Cancel">
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
